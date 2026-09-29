@@ -14,9 +14,12 @@
 <ul>
 <li><b>Account details:</b> your first name (or the name you choose) and your email address. Your password is handled by Google Firebase Authentication and we never see it.</li>
 <li><b>Things you share:</b> community posts, replies, prayer and love taps, study groups you create or join, group chat messages, verses you share, and your answers to group quizzes.</li>
+<li><b>Your profile (optional):</b> a profile picture, a short bio, and up to two links you choose to add.</li>
+<li><b>Friends:</b> friend requests you send or accept, and who you follow.</li>
 <li><b>Safety information:</b> reports you send, and the list of people you have blocked.</li>
 </ul>
-<p>We do not collect your location, contacts, photos, or advertising identifiers. We do not track you across other apps or websites. We do not show ads and we never sell your information.</p>
+<p><b>Profile pictures:</b> when you choose a profile picture, it is shrunk on your phone and checked automatically by an AI (OpenAI, through OpenRouter) to keep out sexual, violent or hateful images. Approved pictures are stored with Supabase and can be seen by other signed-in members. Pictures that are not approved are not stored. You can remove your picture at any time in Edit profile.</p>
+<p>We do not collect your location, contacts, your photo library, or advertising identifiers. We only receive a photo if you choose one as your profile picture. We do not track you across other apps or websites. We do not show ads and we never sell your information.</p>
 
 <h2>Who can see what you share</h2>
 <ul>
@@ -25,6 +28,8 @@
 <li>Community posts and replies can be seen by anyone signed in to the app, along with your name.</li>
 <li>Group chat messages can be seen only by members of that group.</li>
 <li>Your group quiz answers can be seen only by you and the group leader.</li>
+<li>Your profile (name, picture, bio, links), your followers and who you follow can be seen by signed-in members.</li>
+<li>Pending friend requests are seen only by you and the other person.</li>
 <li>Reports are seen only by our moderators.</li>
 </ul>
 
@@ -32,7 +37,7 @@
 <p>The Prayer Room is an optional feature that talks with you about your worries, suggests Scripture, and writes a prayer when you ask. It is an AI, not a counselor or doctor. Before you use it for the first time, the app asks for your permission.</p>
 <ul>
 <li>When you send a message, the app sends your recent Prayer Room messages through our server and <b>OpenRouter</b> (an AI routing service) to <b>OpenAI</b>, the company that makes ChatGPT, so it can write a reply. This content is not used to train AI models. See <a href="https://openrouter.ai/privacy">OpenRouter's privacy policy</a> and <a href="https://openai.com/policies/privacy-policy">OpenAI's privacy policy</a>.</li>
-<li>We do not store your Prayer Room conversation on our servers. It is saved only on your phone, and you can clear it with "Start over."</li>
+<li>We do not store your Prayer Room conversation on our servers. It is saved only on your phone, kept separate for each account, and you can clear it with "Start over."</li>
 <li>We keep a simple count of how many Prayer Room messages each account sends per day, to keep the service fair and affordable.</li>
 <li>Please don't share full names, addresses, or other details that could identify you or someone else.</li>
 </ul>
@@ -41,10 +46,10 @@
 <p>Only to run the app: to sign you in, show your posts and messages to the right people, keep the community safe, and answer your support requests.</p>
 
 <h2>Where it is stored</h2>
-<p>Account and community data is stored with Google Firebase (Authentication and Cloud Firestore), which processes it on our behalf. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+<p>Account and community data is stored with Google Firebase (Authentication and Cloud Firestore), which processes it on our behalf. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>. Profile pictures and the daily AI usage counts are stored with Supabase. See <a href="https://supabase.com/privacy">Supabase's privacy policy</a>. Your highlights, notes, drawings, favorites and study progress stay on your phone, kept separate for each account.</p>
 
 <h2>Deleting your information</h2>
-<p>You can delete your account at any time in the app: tap your profile circle, then <b>Delete my account</b>. This deletes your account, your profile, your posts, and study groups you lead. Messages you sent in other groups may remain in those chats without being linked to an account. You can also email us to ask us to delete your information.</p>
+<p>You can delete your account at any time in the app: tap <b>Him &amp; Her</b> at the top left, then <b>Account</b>, then <b>Delete my account</b>. This deletes your account, your profile and picture link, your friend connections, your posts, and study groups you lead. Messages you sent in other groups may remain in those chats without being linked to an account. You can also email us to ask us to delete your information.</p>
 
 <h2>Children</h2>
 <p>The community features are meant for people 13 and older. We do not knowingly collect information from children under 13. If you believe a child has created an account, contact us and we will delete it.</p>
